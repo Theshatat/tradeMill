@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #5f858b;
+  color: #d2c819;
+}
+.contain {
+  width: 800px;
+  height: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1c1b12;
+  border-radius: 10px;
+}
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.monitor {
+  margin-top: 15px;
+  height: fit-content;
+  width: 300px;
+}
+.monitor.active {
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+span {
+  font-size: 36px;
+  width: calc(100% / 3 - 3px);
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+span::after {
+  font-size: 16px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.time::after {
+  content: "TIME";
+}
+.calories::after {
+  content: "CALORIES";
+}
+.heartRate::after {
+  content: "HEART RATE";
+}
+.contain .infoshape {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+}
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indicator div {
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  border: 3px solid gray;
+  border-radius: 10px;
+}
+.indicator div::after {
+  margin-top: 20px;
+  font-size: 16px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.levels::after {
+  content: "LEVEL";
+}
+.animation::after {
+  content: " ";
+}
+.spm::after {
+  content: "SPM";
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+}
+button {
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
